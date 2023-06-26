@@ -1,6 +1,7 @@
 import "./App.css";
 import { Navbar } from "./components/NavBar";
 import { Main } from "./components/Main";
+import { Footer } from "./components/Footer";
 
 const Layout = () => {
   return (
@@ -11,6 +12,9 @@ const Layout = () => {
       <main>
         <Main />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

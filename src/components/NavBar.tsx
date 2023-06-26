@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "./images/logo.png";
+import Logo from "../images/logo.png";
 import { Spacer } from "./Spacer";
 
 export const Navbar = () => {
@@ -32,4 +32,5 @@ const Image = styled.img`
 
 const NavItems = styled.div`
   display: flex;
+  color: #fff;
 `;
