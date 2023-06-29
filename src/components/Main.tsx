@@ -9,13 +9,15 @@ export const Main = () => {
   return (
     <MainContainer>
       <ImageWrapper>
-        <img
-          src={Hero}
-          alt="hero"
-          height="100%"
-          width="100%"
-          object-fit="cover"
-        />
+        <div>
+          <img
+            src={Hero}
+            alt="hero"
+            height="100%"
+            width="100%"
+            object-fit="cover"
+          />
+        </div>
         <ImageContent>
           <img src={Logo} alt="logo" />
           <Spacer spacing={4} />
@@ -28,9 +30,13 @@ export const Main = () => {
       <Spacer spacing={22} />
 
       <InfoWrapper>
-        <img src={Startpage} alt="logo" width={628} height={456} />
         <div>
+          <img src={Startpage} alt="logo" width={628} height={456} />
+        </div>
+        <Spacer spacing={8} orientation="horizontal" />
+        <AboutSection>
           <h1>Certifierad kontrollansvarig</h1>
+          <Spacer spacing={4} />
           <p>
             Som kontrollansvarig, KA i bygg- och anläggningsprojekt hjälper jag
             dig som Byggherre följa bygglagstiftningen, Plan och Bygglagen. Jag
@@ -40,42 +46,54 @@ export const Main = () => {
             som är tillgrund för byggnadsnämndens beslut om slutbesked. Jag
             hjälper även till med rådgivning vid bygglovsansökan.
           </p>
+          <Spacer spacing={3} />
           <p>
             Läs mer på{" "}
             <a href="https://www.boverket.se/kontrollansvarig">
               boverket.se/kontrollansvarig
             </a>
           </p>
-        </div>
+        </AboutSection>
       </InfoWrapper>
-
       <Spacer spacing={22} />
-
-      <ContactWrapper>
-        <img src={Tobias} alt="logo" />
-        <Spacer spacing={15} orientation="horizontal" />
-        <div>
-          <h1>Kontakta mig</h1>
-          <Spacer spacing={4} />
-          <p>
-            Uppdragsområden är Uddevalla med omnejd, såsom Trollhättan,
-            Vänersborg, Stenungsund, Kungälv, Göteborg & Ale, Lilla Edet,
-            Lysekil, Tjörn, Orust & Munkedal.
-          </p>
-          <Spacer spacing={4} />
-          <p>Tobias Axelsson, cert XX</p>
-          <p>Telefon: 0702-XX XX XX</p>
-          <p>
-            E-post:{" "}
-            <a
-              href={`mailto:tobias@kaprojektkonsult.se`}
-              className="custom-cursor"
-            >
-              tobias@kaprojektkonsult.se
-            </a>
-          </p>
-        </div>
-      </ContactWrapper>
+      <div
+        style={{
+          backgroundColor: "#f9f9f9",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <ContactWrapper>
+          <div>
+            <img src={Tobias} alt="logo" />
+          </div>
+          <Spacer spacing={15} orientation="horizontal" />
+          <div>
+            <h1>Kontakta mig</h1>
+            <Spacer spacing={4} />
+            <p>
+              Uppdragsområden är Uddevalla med omnejd, såsom Trollhättan,
+              Vänersborg, Stenungsund, Kungälv, Göteborg & Ale, Lilla Edet,
+              Lysekil, Tjörn, Orust & Munkedal.
+            </p>
+            <Spacer spacing={4} />
+            <p>Tobias Axelsson, cert XX</p>
+            <Spacer spacing={1} />
+            <p>Telefon: 0702-XX XX XX</p>
+            <Spacer spacing={1} />
+            <p>
+              E-post:{" "}
+              <a
+                href={`mailto:tobias@kaprojektkonsult.se`}
+                className="custom-cursor"
+              >
+                tobias@kaprojektkonsult.se
+              </a>
+            </p>
+          </div>
+        </ContactWrapper>
+      </div>
     </MainContainer>
   );
 };
@@ -88,7 +106,7 @@ const MainContainer = styled.div`
 
 const ImageWrapper = styled.div`
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 `;
 
@@ -115,12 +133,18 @@ const Button = styled.button`
 
 const InfoWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  max-width: 1000px;
+  align-items: center;
 `;
+const AboutSection = styled.div`
+  max-width: 500px;
+
+  a {
+    color: #000;
+  }
+`;
+
 const ContactWrapper = styled.div`
-  background-color: #f9f9f9;
   display: flex;
-  justify-content: center;
   padding: 124px 0;
+  max-width: 770px;
 `;
