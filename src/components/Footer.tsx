@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../images/KA-Logo-footer.png";
+import Logo from "../images/KA-Logo-footer.webp";
 import { Spacer } from "./Spacer";
 
 export const Footer = () => {

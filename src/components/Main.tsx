@@ -1,23 +1,22 @@
 import styled from "styled-components";
-import Logo from "../images/logo.png";
-import Hero from "../images/hero.png";
-import Startpage from "../images/startpage.png";
-import Tobias from "../images/tobias.png";
+import Logo from "../images/logo_advanced.webp";
+import Hero from "../images/hero.webp";
+import Startpage from "../images/startpage.webp";
+import Tobias from "../images/tobias.webp";
 import { Spacer } from "./Spacer";
 
 export const Main = () => {
   return (
     <MainContainer>
       <ImageWrapper>
-        <div>
-          <img
-            src={Hero}
-            alt="hero"
-            height="100%"
-            width="100%"
-            object-fit="cover"
-          />
-        </div>
+        <img
+          src={Hero}
+          alt="hero"
+          height="100%"
+          width="100%"
+          object-fit="fill"
+        />
+
         <ImageContent>
           <img src={Logo} alt="logo" />
           <Spacer spacing={4} />
@@ -28,13 +27,14 @@ export const Main = () => {
       </ImageWrapper>
 
       <Spacer spacing={22} />
-
-      <InfoWrapper>
+      <InfoWrapper id="info">
         <div>
           <img src={Startpage} alt="logo" width={628} height={456} />
         </div>
         <Spacer spacing={8} orientation="horizontal" />
         <AboutSection>
+          <Line />
+          <Spacer spacing={4} />
           <h1>Certifierad kontrollansvarig</h1>
           <Spacer spacing={4} />
           <p>
@@ -64,7 +64,7 @@ export const Main = () => {
           justifyContent: "center",
         }}
       >
-        <ContactWrapper>
+        <ContactWrapper id="contact">
           <div>
             <img src={Tobias} alt="logo" />
           </div>
@@ -74,13 +74,13 @@ export const Main = () => {
             <Spacer spacing={4} />
             <p>
               Uppdragsområden är Uddevalla med omnejd, såsom Trollhättan,
-              Vänersborg, Stenungsund, Kungälv, Göteborg & Ale, Lilla Edet,
+              Vänersborg, Stenungsund, Kungälv, Göteborg, Ale, Lilla Edet,
               Lysekil, Tjörn, Orust & Munkedal.
             </p>
             <Spacer spacing={4} />
             <p>Tobias Axelsson, cert XX</p>
             <Spacer spacing={1} />
-            <p>Telefon: 0702-XX XX XX</p>
+            <p>Telefon: 0760-21 14 26</p>
             <Spacer spacing={1} />
             <p>
               E-post:{" "}
@@ -88,7 +88,7 @@ export const Main = () => {
                 href={`mailto:tobias@kaprojektkonsult.se`}
                 className="custom-cursor"
               >
-                tobias@kaprojektkonsult.se
+                tobias@kaprojektkonsult.com
               </a>
             </p>
           </div>
@@ -134,6 +134,11 @@ const Button = styled.button`
 const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
+`;
+const Line = styled.div`
+  width: 40px;
+  height: 2px;
+  background-color: black;
 `;
 const AboutSection = styled.div`
   max-width: 500px;
