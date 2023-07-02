@@ -28,9 +28,7 @@ export const Main = () => {
 
       <Spacer spacing={22} />
       <InfoWrapper id="info">
-        <div>
-          <img src={Startpage} alt="logo" width={628} height={456} />
-        </div>
+        <img src={Startpage} alt="logo" width={628} height={456} />
         <Spacer spacing={8} orientation="horizontal" />
         <AboutSection>
           <Line />
@@ -65,9 +63,8 @@ export const Main = () => {
         }}
       >
         <ContactWrapper id="contact">
-          <div>
-            <img src={Tobias} alt="logo" />
-          </div>
+          <img src={Tobias} alt="logo" width="182px" height="240px" />
+
           <Spacer spacing={15} orientation="horizontal" />
           <div>
             <h1>Kontakta mig</h1>
@@ -134,6 +131,10 @@ const Button = styled.button`
 const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
 const Line = styled.div`
   width: 40px;
@@ -152,4 +153,8 @@ const ContactWrapper = styled.div`
   display: flex;
   padding: 124px 0;
   max-width: 770px;
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
