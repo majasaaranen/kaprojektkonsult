@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Logo from "../images/logo_advanced.webp";
 import { Spacer } from "./Spacer";
+export const BREAKPOINT = 950;
 
 export const Navbar = () => {
   return (
@@ -29,6 +30,10 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 24px 48px;
+
+  @media (max-width: ${BREAKPOINT}px) {
+    padding: 24px;
+  }
 `;
 
 const NavItems = styled.div`
