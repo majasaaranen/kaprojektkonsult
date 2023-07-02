@@ -5,7 +5,7 @@ import { Spacer } from "./Spacer";
 export const Navbar = () => {
   return (
     <Nav>
-      <Image src={Logo} alt="logo" />
+      <img src={Logo} alt="logo" height={40} width={114} />
       <NavItems>
         <StyledA href="./#info">
           <p>Kontrollansvarig</p>
@@ -27,11 +27,8 @@ const Nav = styled.nav`
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 24px 48px;
-`;
-
-const Image = styled.img`
-  width: 45px;
 `;
 
 const NavItems = styled.div`

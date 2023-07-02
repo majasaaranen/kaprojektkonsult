@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../images/KA-Logo-footer.webp";
+import Logo from "../images/logo_black.webp";
 import { Spacer } from "./Spacer";
 
 export const Footer = () => {
@@ -14,4 +14,8 @@ export const Footer = () => {
 
 const Container = styled.div`
   padding: 80px 128px;
+
+  @media screen and (max-width: 750px) {
+    padding: 60px 24px;
+  }
 `;

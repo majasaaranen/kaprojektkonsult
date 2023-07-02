@@ -22,7 +22,11 @@ export const Main = () => {
           <Spacer spacing={4} />
           <h2>Certifierad kontrollansvarig enligt Plan och Bygglagen</h2>
           <Spacer spacing={6} />
-          <Button>Kontakt</Button>
+          <Button>
+            <StyledA href="./#contact">
+              <p>Kontakt</p>
+            </StyledA>
+          </Button>
         </ImageContent>
       </ImageWrapper>
 
@@ -77,16 +81,18 @@ export const Main = () => {
             <Spacer spacing={4} />
             <p>Tobias Axelsson, cert XX</p>
             <Spacer spacing={1} />
-            <p>Telefon: 0760-21 14 26</p>
+            <p>
+              Telefon: <StyledA href="tel:0760211426">0760-21 14 26</StyledA>
+            </p>
             <Spacer spacing={1} />
             <p>
               E-post:{" "}
-              <a
+              <StyledA
                 href={`mailto:tobias@kaprojektkonsult.se`}
                 className="custom-cursor"
               >
                 tobias@kaprojektkonsult.com
-              </a>
+              </StyledA>
             </p>
           </div>
         </ContactWrapper>
@@ -105,6 +111,10 @@ const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
+`;
+const StyledA = styled.a`
+  text-decoration: none;
+  color: black;
 `;
 
 const ImageContent = styled.div`
@@ -126,14 +136,16 @@ const Button = styled.button`
   height: 56px;
   border: none;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
 `;
 
 const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
+  /* padding: 0 128px; */
 
   @media screen and (max-width: 750px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
 const Line = styled.div`
@@ -155,6 +167,6 @@ const ContactWrapper = styled.div`
   max-width: 770px;
 
   @media screen and (max-width: 750px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
