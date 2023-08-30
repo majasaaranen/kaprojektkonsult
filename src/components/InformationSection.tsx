@@ -19,9 +19,9 @@ export const InformationSection = () => {
           dig som Byggherre följa bygglagstiftningen, Plan och Bygglagen. Jag
           upprättar förslag till kontrollplan för den aktuella åtgärden,
           medverkar på tekniskt samråd och arbetsplatsbesök med
-          byggnadsinspektör. Deltager vid besiktningar samt skriver utlåtande
-          som är tillgrund för byggnadsnämndens beslut om slutbesked. Jag
-          hjälper även till med rådgivning vid bygglovsansökan.
+          byggnadsinspektör. Deltar vid besiktningar samt skriver utlåtande som
+          är tillgrund för byggnadsnämndens beslut om slutbesked. Jag hjälper
+          även till med rådgivning vid bygglovsansökan.
         </p>
         <Spacer spacing={3} />
         <p>
