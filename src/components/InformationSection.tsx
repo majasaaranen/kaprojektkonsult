@@ -23,6 +23,13 @@ export const InformationSection = () => {
           är tillgrund för byggnadsnämndens beslut om slutbesked. Jag hjälper
           även till med rådgivning vid bygglovsansökan.
         </p>
+        <Spacer spacing={2} />
+        <p>
+          Byggledning, efter många års erfarenhet som projektledare och
+          platschef hjälper jag dig som Byggherre med beställarfrågor så som
+          kvalitet, beställningar och rådgivning från projektstart till
+          slutbesiktning.
+        </p>
         <Spacer spacing={3} />
         <p>
           Läs mer på{" "}
