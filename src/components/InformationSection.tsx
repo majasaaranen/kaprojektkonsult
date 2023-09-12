@@ -12,10 +12,10 @@ export const InformationSection = () => {
       <AboutSection>
         <Line />
         <Spacer spacing={4} />
-        <h1>Certifierad kontrollansvarig</h1>
+        <h1>Certifierad Kontrollansvarig</h1>
         <Spacer spacing={4} />
         <p>
-          Som kontrollansvarig, KA i bygg- och anläggningsprojekt hjälper jag
+          Som Kontrollansvarig, KA i bygg- och anläggningsprojekt hjälper jag
           dig som Byggherre följa bygglagstiftningen, Plan och Bygglagen. Jag
           upprättar förslag till kontrollplan för den aktuella åtgärden,
           medverkar på tekniskt samråd och arbetsplatsbesök med

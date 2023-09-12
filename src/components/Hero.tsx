@@ -19,7 +19,7 @@ export const Hero = () => {
           <img src={Logo} alt="logo" width="100%" />
         </LogoWrapper>
         <Spacer spacing={4} />
-        <h2>Certifierad kontrollansvarig enligt Plan och Bygglagen</h2>
+        <h2>Certifierad Kontrollansvarig enligt Plan och Bygglagen</h2>
         <Spacer spacing={6} />
         <Button>
           <StyledA href="./#contact">
