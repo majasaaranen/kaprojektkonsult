@@ -1,18 +1,40 @@
 import styled from "styled-components";
 import Logo from "../images/logo_advanced.webp";
+import LogoBlack from "../images/logo_black.webp";
 import { Spacer } from "./Spacer";
+import { useEffect, useState } from "react";
+
 export const BREAKPOINT = 950;
 
 export const Navbar = () => {
+  const [bgColor, setBgColor] = useState("white");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setBgColor("black");
+      } else {
+        setBgColor("white");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <Nav>
-      <img src={Logo} alt="logo" height={40} width={114} />
+      {bgColor === "white" ? (
+        <img src={Logo} alt="logo" height={40} width={114} />
+      ) : (
+        <img src={LogoBlack} alt="logo" height={40} width={114} />
+      )}
       <NavItems>
-        <StyledA href="./#info">
+        <StyledA href="./#info" color={bgColor}>
           <p>Kontrollansvarig</p>
         </StyledA>
         <Spacer spacing={5} orientation="horizontal" />
-        <StyledA href="./#contact">
+        <StyledA href="./#contact" color={bgColor}>
           <p>Kontakt</p>
         </StyledA>
       </NavItems>
@@ -40,7 +62,7 @@ const NavItems = styled.div`
   display: flex;
 `;
 
-const StyledA = styled.a`
+const StyledA = styled.a<{ color: string }>`
   text-decoration: none;
-  color: white;
+  color: ${(props) => props.color};
 `;
