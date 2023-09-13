@@ -27,7 +27,7 @@ export const ContactSection = () => {
             Lysekil, Tjörn, Orust & Munkedal.
           </p>
           <Spacer spacing={4} />
-          <p>Tobias Axelsson, cert: C003887</p>
+          <p>Tobias Axelsson, certifikat: C003887</p>
           <Spacer spacing={1} />
           <p>
             Telefon: <StyledA href="tel:0760211426">0760-21 14 26</StyledA>
