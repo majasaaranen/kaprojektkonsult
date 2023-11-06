@@ -21,11 +21,7 @@ export const ContactSection = () => {
         <div>
           <h1>Kontakta mig</h1>
           <Spacer spacing={4} />
-          <p>
-            Uppdragsområden är Uddevalla med omnejd, såsom Trollhättan,
-            Vänersborg, Stenungsund, Kungälv, Göteborg, Ale, Lilla Edet,
-            Lysekil, Tjörn, Orust & Munkedal.
-          </p>
+          <p>Uppdragsområde är Västra Götaland.</p>
           <Spacer spacing={4} />
           <p>Tobias Axelsson, certifikat: C003887</p>
           <Spacer spacing={1} />
