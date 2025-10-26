@@ -44,6 +44,7 @@ const LogoWrapper = styled.div`
 const StyledA = styled.a`
   text-decoration: none;
   color: black;
+  font-family: "Inter", sans-serif;
 `;
 
 const ImageContent = styled.div`
@@ -66,4 +67,8 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   font-family: "Inter", sans-serif;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
 `;

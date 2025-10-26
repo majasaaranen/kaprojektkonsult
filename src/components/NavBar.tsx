@@ -65,4 +65,8 @@ const NavItems = styled.div`
 const StyledA = styled.a<{ color: string }>`
   text-decoration: none;
   color: ${(props) => props.color};
+
+  &:hover {
+    color: #eeeeee;
+  }
 `;
