@@ -25,17 +25,9 @@ export const InformationSection = () => {
         </p>
         <Spacer spacing={2} />
         <p>
-          Byggledning, efter många års erfarenhet som projektledare och
-          platschef hjälper jag dig som Byggherre med beställarfrågor så som
-          kvalitet, beställningar och rådgivning från projektstart till
-          slutbesiktning.
-        </p>
-        <Spacer spacing={3} />
-        <p>
-          Läs mer på{" "}
-          <a href="https://www.boverket.se/kontrollansvarig">
-            boverket.se/kontrollansvarig
-          </a>
+          Byggledning, efter många års erfarenhet hjälper jag dig som Byggherre
+          med beställarfrågor så som kvalitet, beställningar och rådgivning från
+          projektstart till slutbesiktning. Uppdragsområdet är Västra Götaland.
         </p>
         <Spacer spacing={4} />
       </AboutSection>

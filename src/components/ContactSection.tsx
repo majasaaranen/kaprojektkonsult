@@ -21,9 +21,7 @@ export const ContactSection = () => {
         <div>
           <h1>Kontakta mig</h1>
           <Spacer spacing={4} />
-          <p>Uppdragsområde är Västra Götaland.</p>
-          <Spacer spacing={4} />
-          <p>Tobias Axelsson, certifikat: C003887</p>
+          <p>Tobias Olofsson, certifikat: C003887</p>
           <Spacer spacing={1} />
           <p>
             Telefon: <StyledA href="tel:0760211426">0760-21 14 26</StyledA>
