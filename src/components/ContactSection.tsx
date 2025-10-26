@@ -30,7 +30,7 @@ export const ContactSection = () => {
           <p>
             E-post:{" "}
             <StyledA
-              href={`mailto:tobias@kaprojektkonsult.se`}
+              href={`mailto:tobias@kaprojektkonsult.com`}
               className="custom-cursor"
             >
               tobias@kaprojektkonsult.com
