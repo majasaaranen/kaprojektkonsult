@@ -7,7 +7,7 @@ export const BREAKPOINT = 950;
 export const InformationSection = () => {
   return (
     <InfoWrapper id="info">
-      <img src={Startpage} alt="logo" width={"100%"} height={"100%"} />
+      <img src={Startpage} alt="logo" width="100%" height="380px" />
       <Spacer spacing={8} orientation="horizontal" />
       <AboutSection>
         <Line />
