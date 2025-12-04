@@ -15,7 +15,7 @@ export const ContactSection = () => {
       }}
     >
       <ContactWrapper id="contact">
-        <img src={Tobias} alt="logo" width="182px" height="240px" />
+        <img src={Tobias} alt="logo" width="220px" height="220px" />
 
         <Spacer spacing={15} orientation="horizontal" />
         <div>
@@ -47,6 +47,7 @@ const ContactWrapper = styled.div`
   display: flex;
   padding: 124px 0;
   max-width: 770px;
+  align-items: center;
 
   @media screen and (max-width: ${BREAKPOINT}px) {
     flex-direction: column-reverse;
